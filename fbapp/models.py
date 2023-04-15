@@ -2,8 +2,9 @@ from flask_sqlalchemy import SQLAlchemy
 import logging as lg
 
 from .views import app
+
 # Create database connection object
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 class Content(db.Model):
     id = db.Column(db.Integer, primary_key=True)
